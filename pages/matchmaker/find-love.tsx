@@ -2,7 +2,7 @@ import { useState, FunctionComponent } from 'react'
 import { ApolloClient, InMemoryCache } from '@apollo/client'
 import QUERY_RICKMORTY from "./RickMortyQuery.graphql"
 import Image from 'next/image'
-import * as styles from './matchmaker.css'
+import * as styles from '../../styles/pages/matchmaker.css'
 import AppHeader from '../../components/AppHeader'
 
 export default function MatchMaker({ dates }) {
