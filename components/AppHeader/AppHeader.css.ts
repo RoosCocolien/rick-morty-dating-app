@@ -4,7 +4,7 @@ import { vars } from '../../styles/styles.css'
 export const header = style({
   overflow: 'hidden',
   backgroundColor: vars.color.green,
-  padding: vars.space['3x'],
+  padding: vars.space['m'],
   color: vars.color.white,
 });
 
@@ -13,5 +13,5 @@ export const headerRight = style({
 });
 
 export const headerItem = style({
-  padding: vars.space['1x']
+  padding: vars.space['m']
 })

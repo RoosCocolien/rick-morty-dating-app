@@ -1,8 +1,8 @@
-import { useState, FunctionComponent } from 'react'
+import { useState } from 'react'
 import { ApolloClient, InMemoryCache } from '@apollo/client'
 import QUERY_RICKMORTY from './RickMortyQuery.graphql'
 import Image from 'next/image'
-import * as styles from '../../styles/styles.css'
+import * as styles from '../../styles/pages/find-love.css'
 
 export default function MatchMaker({ dates }) {
   const [dateIndex, setDateIndex] = useState(0);
@@ -40,7 +40,7 @@ export default function MatchMaker({ dates }) {
   return (
     <div>
 
-      <div className={styles.themeClass}>
+      <div className={styles.container}>
         <main className={styles.grid}>
           <h1>Matchmaker</h1>
           <div className={styles.card}>
@@ -53,11 +53,11 @@ export default function MatchMaker({ dates }) {
                 width={300}
                 height={300} />
               <p>{dateIndex + 1} of {dates.length}</p>
-              <p>
-                <button onClick={nextDate}>
+              <div className={styles.buttonDiv}>
+                <button className={styles.button} onClick={nextDate}>
                   Next
                 </button>
-              </p>
+              </div>
             </div>
           </div>
           <div className={styles.card}>
@@ -65,11 +65,11 @@ export default function MatchMaker({ dates }) {
             <div>
               <h3>{adventure.name}</h3>
               <p>{adventureIndex + 1} of {date.episode.length}</p>
-              <p>
-                <button onClick={nextAdventure}>
+              <div className={styles.buttonDiv}>
+                <button className={styles.button} onClick={nextAdventure}>
                   Next
                 </button>
-              </p>
+              </div>
             </div>
           </div>
         </main>

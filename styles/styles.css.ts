@@ -5,13 +5,24 @@ import { hsl } from 'polished'
 export const [themeClass, vars] = createTheme({
   space: {
     none: '0',
-    '0x': '0.25rem',
-    '1x': '0.5rem',
-    '2x': '0.75rem',
-    '3x': '1rem',
-    '4x': '1.5rem',
-    '5x': '2rem',
-    '6x': '3rem',
+    'xxs': '0.25rem',
+    'xs': '0.5rem',
+    's': '0.75rem',
+    'm': '1rem',
+    'l': '1.5rem',
+    'xl': '2rem',
+    'xxl': '3rem',
+    'auto': 'auto',
+  },
+  radius: {
+    's': '5px',
+    'm': '10px',
+    'l': '15px',
+  },
+  shadow: {
+    's': '5px',
+    'm': '10px',
+    'l': '15px',
   },
   color: {
     white: hsl(0, 0, 1),
